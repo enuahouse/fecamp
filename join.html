@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <title>Sample Document</title>
+        <meta charset="utf-8">
+</head>
+<body>
+    <h1>회원가입</h1>
+    <form action="" method="post">
+        <fieldset>
+            <legend> 필수입력정보 </legend>
+            <p>
+            <label>이메일 <input type="email" name="email"></label>
+            </p>
+            <p>
+            패스워드확인
+            <input type="password" maxlength="12" name="password"> 패스워드확인 <input type="password">
+            </p>
+            <br>
+        </fieldset>
+        
+        <br><br><br>
+        
+        <fieldset>
+            <legend> 선택입력정보 </legend>
+            <p>
+            전화번호 <select name="phone1">
+            <option value="010">010</option>
+            <option value="02">02</option>
+            <option value="032">032</option>
+            <option value="070">070</option>
+            </select>
+            <input type="text" size="6" maxlength="4" name="phone2">
+            <input type="text" size="6" maxlength="4" name="phone3">
+            </p>
+            
+            <p>생년월일 <input type="date" name="birth"</p>
+            <br>
+            <br>
+            <input type="submit" value="누르면 폭발"></input>
+        <input type="reset" value="취소"></input>
+        </fieldset>
+    </form>
+    
+</body>
+</html>
