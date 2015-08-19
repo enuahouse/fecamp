@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <title>Sample Document</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="device-width, initial-scale=1.0, maximum-scale=2.0, minimum-scale=1.0, user-scalable=yes">
+</head>
+<body>
+    <h1>회원가입</h1>
+    
+    <form action="" method="post">
+        <fieldset>
+            <legend> 필수입력정보 </legend>
+            <table>
+                <tr>
+                    <td><label for="email1">이메일</label></td>
+                    <td><input maxlength="12" type="email" name="email" id="email1"></td>
+                </tr>
+                
+                <tr>
+                    <td><label for="pw1">비밀번호 입력</label></td>
+                    <td><input maxlength="12" type="password" name="password" id="pw1"></td>
+                </tr>                
+                
+                <tr>
+                    <td><label for="pw2">비밀번호 확인</label></td>
+                    <td><input maxlength="12" type="password" name="password1" id="pw2"></td>
+                </tr>                
+            </table>
+        </fieldset>
+        
+        <br>
+        
+        <fieldset>
+            <legend> 선택입력정보 </legend>
+            <table>
+                <tr>
+                    <td><label for="phone">전호번호</label></td>
+                    <td><select name="phone1" id="phone">
+                        <option value="010">010</option>
+                        <option value="010">02</option>
+                        <option value="010">032</option>
+                        <option value="010">070</option>                        
+                        </select>
+                        <input type="number" name="phone2" maxlength="4" id="phone">
+                        <input type="number" name="phone3" maxlength="4" id="phone">                                        
+                    </td>                    
+                </tr>
+                
+                <tr>
+                    <td><label for="bday">생년월일</label></td>
+                    <td><input type="date" name="bday" id="bday"></td>
+                </tr>
+            </table>
+        </fieldset>
+        <br>
+        <input type="submit" value="누르면 폭발"></input>
+        <input type="reset" value="취소"></input>        
+    </form>
+    
+</body>
+</html>
