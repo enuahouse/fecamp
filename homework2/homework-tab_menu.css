@@ -40,7 +40,7 @@ li a {
     text-align: center;
     font-size: 13px;
     color:white;    
-    border-left : 1px solid #3d4756;    
+    border-left : 1px solid #3d4756;
     border-top : 0px;
     border-bottom : 0px;
 }
@@ -48,7 +48,6 @@ li a {
 li a:focus {
     background-color:white;
     color:#505a69;       
-    border : 1px solid #cfcfcf;
     border-left : 1px solid #cfcfcf;
     border-top : 0px;
     border-bottom : 0px;
