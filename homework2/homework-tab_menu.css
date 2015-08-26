@@ -1,0 +1,93 @@
+@charset "utf-8";
+
+body {
+    margin: 0;
+}
+
+li {
+    float:left; /*li 요소들이 아래가 아니라 옆으로 붙게 */
+}
+
+ul {
+    list-style-type: none; /*list 마다 앞에 점 찍히는 것을 없앰 */
+    margin: 0px;
+    padding: 0px;
+}
+
+.tab_menu {
+    left: 0;
+    top: 0;
+    width: 100%; 
+    border-top:2px solid #3d4756;
+    background-color: #505a69;
+    z-index: 2;
+}
+
+.tab_menu:after {
+/*    content:':after에 보여지는 내용입니다';*/
+    clear: both;
+    display: block;
+    content: '';
+}
+
+li a {
+    font-family: '나눔고딕';
+    font-weight: bold;
+    display: block;
+    width: 131px;
+    line-height:45px;
+    text-decoration: none;
+    text-align: center;
+    font-size: 13px;
+    color:white;    
+    border-left : 1px solid #3d4756;    
+    border-top : 0px;
+    border-bottom : 0px;
+}
+
+li a:focus {
+    background-color:white;
+    color:#505a69;       
+    border : 1px solid #cfcfcf;
+    border-left : 1px solid #cfcfcf;
+    border-top : 0px;
+    border-bottom : 0px;
+}
+
+.long_menu a {
+    font-family: '나눔고딕';
+    font-weight: bold;
+    display: block;
+    width: 145px;
+    line-height:45px;
+    text-decoration: none;
+    text-align: center;
+    font-size: 13px;
+    color:white;    
+    border : 1px solid #3d4756;    
+    border-top : 0px;
+    border-bottom : 0px;
+}
+
+.sns_menu {
+    float:right;
+    margin:6px 20px 0 0;    
+}
+
+.sns_menu a{width: 40px;
+    line-height: 0px;
+    text-decoration: none;
+    color:white;      
+    border : 0px;
+}
+    
+.sns_menu a:focus {
+    width: 40px;
+    line-height: 0px;
+    text-decoration: none;
+    background-color:#505a69;      
+    border : 0px;
+}
+
+
+//style.css
