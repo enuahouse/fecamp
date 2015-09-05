@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <title>fecamp homework #1</title>
+        <meta charset="utf-8">
+    <style>
+    
+    body, h1 {
+        margin:10px;
+    }
+        
+    header h1 {
+        text-align: center;
+    }
+        
+    .content {
+        margin:0 auto;
+        max-width: 900px;
+        padding-top:5px;
+    }
+ 
+    ul {
+        list-style :none;
+        padding:0px;
+        
+    }
+        
+    .container {
+        margin:0 auto;
+        overflow :hidden;
+    }        
+           
+    /* 네비게이션 */
+    .gnb {        
+        max-width:900px;
+        margin:0 auto;
+        border-right: 1px solid white;
+    }
+        
+    .gnb > li {
+        float:left;                
+        position : relative;
+        width : 16.66%;
+    }
+    
+    
+    .gnb .sub-menu {
+        display: none;
+    }
+    
+    .gnb li:hover .sub-menu {
+        display: block;
+    }
+        
+        
+    .gnb li a {
+        display:block;
+        text-align: center;
+        line-height: 33px;
+        text-decoration: none;
+        background-color:grey;
+        color:white;
+        border-left:1px solid white;
+    }
+                    
+    .gnb a:hover {
+        background-color: beige;
+        color:black;
+    }
+        
+    .gnb:after {
+        display:block;
+        clear:both;
+        content:'';
+    }
+        
+    .gnb_wrap {
+        background-color:grey;        
+        border-bottom: 1px solid white;
+    }
+        
+   
+    
+    .sub-menu {
+        position: absolute;
+        width : 100%;
+        padding-bottom: 1px;                
+        list-style-type:none;
+        z-index: 2;
+    }
+        
+    .sub-menu li{
+        clear:both;
+    }
+    
+    .sub-menu li a{
+        display:block;
+        clear:both;
+        text-align: center;
+        line-height: 30px;
+        text-decoration: none;
+        background-color:#b18585;
+        color:white;
+        font-size: 12px;
+        border-top:1px solid white;
+    }
+        
+    .sub-menu a:hover {
+        background-color: #7ea57e;
+        font-weight: bold;
+    }
+    
+        
+    body {
+        margin :0px;
+        font-family: arial,나눔고딕;
+    } 
+        
+    header {
+        width:100%;
+        left:0px;
+        right:0px;
+    }
+        
+    .ellipsis {
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow:hidden;
+    }
+        
+    footer {
+/*        border: 1px solid grey;*/
+    }
+    
+    .spot {
+        background-image: url(img/big.jpg);
+        height:500px;
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+        background-size:cover;
+    }
+        
+    .shopping_list {
+        display: block;
+        margin:0 -5px;
+    }
+    
+            
+    .shopping_item {
+/*
+        float:left;
+        width:33.3%; 
+*/
+    }
+        
+    .thumb {
+        height:100px;
+        background-image: url(item1.jpg);
+        background-size: contain;
+        border:1px solid black;
+    }
+        
+    li.shopping_item a {
+        display: block;
+        font-size :14 px;
+        text-decoration: none;
+    }
+        
+    li.shopping_item a:hover {
+        border: 1px solid gray;
+        box-sizing: border-box;
+    }
+        
+    .ellipsis {
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow:hidden;
+    }
+    
+    .shopping_item .box {
+        padding:0 5px;
+    }
+        
+    @media screen and (min-width:600px){
+        .shopping_item {
+            float:left;
+            width:50%;
+        }
+    }
+        
+    @media screen and (min-width:700px){
+        .shopping_item {
+            width:33.3%;
+        }
+    }
+        
+     @media screen and (min-width:800px){
+        .shopping_item {
+            width:25%;
+        }
+    }
+    
+    @media screen and (max-width:600px){
+        .gnb > li {
+            width:33%;
+            border-bottom: 1px solid white;
+        }
+    }
+    
+    @media screen and (max-width:300px){
+        .gnb > li {
+            width:50%;
+        }
+    }
+
+        
+    </style>
+</head>
+    
+    
+<body>
+        <header><h1>서비스명</h1>
+            <div class="gnb_wrap">
+                <ul class="gnb">
+                    <li>
+                        <a href="#">신선식품</a>
+                        <ul class="sub-menu">
+                            <li><a href="#">메뉴2-1</a></li>
+                            <li><a href="#">메뉴2-2</a></li> 
+                        </ul>
+                    </li>
+                    <li><a href="#">정육/달걀</a>
+                        <ul class="sub-menu">
+                            <li><a href="#">메뉴3-1</a></li>
+                            <li><a href="#">메뉴3-2</a></li>
+                            <li><a href="#">메뉴3-3</a></li> 
+                        </ul>                  
+                    </li>
+                    <li><a href="#">가공식품</a>
+                        <ul class="sub-menu">
+                            <li><a href="#">메뉴4-1</a></li>
+                            <li><a href="#">메뉴4-2</a></li>
+                            <li><a href="#">메뉴4-3</a></li>
+                            <li><a href="#">메뉴4-4</a></li>    
+                        </ul>                    
+                    </li>
+                    <li><a href="#">양념/반찬</a>
+                        <ul class="sub-menu">
+                            <li><a href="#">메뉴5-1</a></li>
+                        </ul>                  
+                    </li>
+                    <li><a href="#">Deli</a>
+                        <ul class="sub-menu">
+                            <li><a href="#">메뉴6-1</a></li>
+                            <li><a href="#">메뉴6-2</a></li>
+                            <li><a href="#">메뉴6-3</a></li> 
+                        </ul>
+                    </li>
+                    <li><a href="#" >Kuryl Loves</a>
+                        <ul class="sub-menu">
+                            <li><a href="#">메뉴7-1</a></li>
+                            <li><a href="#">메뉴7-2</a></li>
+                            <li><a href="#">메뉴7-3</a></li>
+                            <li><a href="#">메뉴7-4</a></li>    
+                        </ul>
+                    </li>
+                </ul>
+                </header>
+    
+    <div class="content">
+        
+    <ul class="shopping_list">
+        <li class="shopping_item">
+            <div class="box">
+            <div class="thumb"></div>
+            <p class="ellipsis">#1 CERVELO S5-ULTEGRA 6800#1 CERVELO S5-ULTEGRA 6800#1 CERVELO S5-ULTEGRA 6800#1 CERVELO S5-ULTEGRA 6800#1 CERVELO S5-ULTEGRA 6800#1 CERVELO S5-ULTEGRA 6800#1 CERVELO S5-ULTEGRA 6800#1 CERVELO S5-ULTEGRA 6800</p>
+            </div>
+        </li>
+        
+        <li class="shopping_item">
+            <div class="box">
+            <div class="thumb"></div>
+            <p class="ellipsis">#1 CERVELO S5-ULTEGRA 6800#1 CERVELO S5-ULTEGRA 6800#1 CERVELO S5-ULTEGRA 6800#1 CERVELO S5-ULTEGRA 6800#1 CERVELO S5-ULTEGRA 6800#1 CERVELO S5-ULTEGRA 6800#1 CERVELO S5-ULTEGRA 6800#1 CERVELO S5-ULTEGRA 6800</p>
+            </div>        
+        </li>
+        
+        <li class="shopping_item">
+            <div class="box">
+            <div class="thumb"></div>
+            <p class="ellipsis">#1 CERVELO S5-ULTEGRA 6800#1 CERVELO S5-ULTEGRA 6800#1 CERVELO S5-ULTEGRA 6800#1 CERVELO S5-ULTEGRA 6800#1 CERVELO S5-ULTEGRA 6800#1 CERVELO S5-ULTEGRA 6800#1 CERVELO S5-ULTEGRA 6800#1 CERVELO S5-ULTEGRA 6800</p>
+            </div>        
+        </li>
+        
+        <li class="shopping_item">
+            <div class="box">
+            <div class="thumb"></div>
+            <p class="ellipsis">#1 CERVELO S5-ULTEGRA 6800#1 CERVELO S5-ULTEGRA 6800#1 CERVELO S5-ULTEGRA 6800#1 CERVELO S5-ULTEGRA 6800#1 CERVELO S5-ULTEGRA 6800#1 CERVELO S5-ULTEGRA 6800#1 CERVELO S5-ULTEGRA 6800#1 CERVELO S5-ULTEGRA 6800</p>
+            </div>        
+        </li>
+        <li class="shopping_item">
+            <div class="box">
+            <div class="thumb"></div>
+            <p class="ellipsis">#1 CERVELO S5-ULTEGRA 6800#1 CERVELO S5-ULTEGRA 6800#1 CERVELO S5-ULTEGRA 6800#1 CERVELO S5-ULTEGRA 6800#1 CERVELO S5-ULTEGRA 6800#1 CERVELO S5-ULTEGRA 6800#1 CERVELO S5-ULTEGRA 6800#1 CERVELO S5-ULTEGRA 6800</p>
+            </div>        
+        </li>
+        <li class="shopping_item">
+            <div class="box">
+            <div class="thumb"></div>
+            <p class="ellipsis">#1 CERVELO S5-ULTEGRA 6800#1 CERVELO S5-ULTEGRA 6800#1 CERVELO S5-ULTEGRA 6800#1 CERVELO S5-ULTEGRA 6800#1 CERVELO S5-ULTEGRA 6800#1 CERVELO S5-ULTEGRA 6800#1 CERVELO S5-ULTEGRA 6800#1 CERVELO S5-ULTEGRA 6800</p>
+            </div>        
+        </li>
+        <li class="shopping_item">
+            <div class="box">
+            <div class="thumb"></div>
+            <p class="ellipsis">#1 CERVELO S5-ULTEGRA 6800#1 CERVELO S5-ULTEGRA 6800#1 CERVELO S5-ULTEGRA 6800#1 CERVELO S5-ULTEGRA 6800#1 CERVELO S5-ULTEGRA 6800#1 CERVELO S5-ULTEGRA 6800#1 CERVELO S5-ULTEGRA 6800#1 CERVELO S5-ULTEGRA 6800</p>
+            </div>        
+        </li>
+        <li class="shopping_item">
+            <div class="box">
+            <div class="thumb"></div>
+            <p class="ellipsis">#1 CERVELO S5-ULTEGRA 6800#1 CERVELO S5-ULTEGRA 6800#1 CERVELO S5-ULTEGRA 6800#1 CERVELO S5-ULTEGRA 6800#1 CERVELO S5-ULTEGRA 6800#1 CERVELO S5-ULTEGRA 6800#1 CERVELO S5-ULTEGRA 6800#1 CERVELO S5-ULTEGRA 6800</p>
+            </div>        
+        </li>
+        <li class="shopping_item">
+            <div class="box">
+            <div class="thumb"></div>
+            <p class="ellipsis">#1 CERVELO S5-ULTEGRA 6800#1 CERVELO S5-ULTEGRA 6800#1 CERVELO S5-ULTEGRA 6800#1 CERVELO S5-ULTEGRA 6800#1 CERVELO S5-ULTEGRA 6800#1 CERVELO S5-ULTEGRA 6800#1 CERVELO S5-ULTEGRA 6800#1 CERVELO S5-ULTEGRA 6800</p>
+            </div>        
+        </li>
+        <li class="shopping_item">
+            <div class="box">
+            <div class="thumb"></div>
+            <p class="ellipsis">#1 CERVELO S5-ULTEGRA 6800#1 CERVELO S5-ULTEGRA 6800#1 CERVELO S5-ULTEGRA 6800#1 CERVELO S5-ULTEGRA 6800#1 CERVELO S5-ULTEGRA 6800#1 CERVELO S5-ULTEGRA 6800#1 CERVELO S5-ULTEGRA 6800#1 CERVELO S5-ULTEGRA 6800</p>
+            </div>        
+        </li>
+    </ul>
+    </div>
+        
+    
+        <footer></footer>
+</div>
+    
+</body>
+</html>
